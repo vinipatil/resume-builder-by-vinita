@@ -1,19 +1,17 @@
-// PDFGenerator.js
+
 import React from 'react';
 import { Document, Page, Text, View, Image, PDFViewer } from '@react-pdf/renderer';
-import styles from './PDFGenerator.css'; // Import CSS styles
+import styles from './PDFGenerator.css'; 
 
 const PDFGenerator = ({ formData, imageData }) => {
-  const maxDetailHeight = 600; // Maximum height of details on the first page
+  const maxDetailHeight = 600; 
   let firstPageDetails = [];
   let secondPageDetails = [];
 
-  // Calculate height for each detail
   const calculateDetailHeight = (value) => {
-    return value.toString().length * 4; // Approximate height calculation based on string length
+    return value.toString().length * 4; 
   };
 
-  // Distribute details between first and second page
   let totalHeight = 0;
   for (const [key, value] of Object.entries(formData)) {
     const detailHeight = calculateDetailHeight(value);
