@@ -29,7 +29,7 @@ const PageThree = ({ formData, handleChange, previousPage, nextPage }) => {
         onChange={(e) => handleChange("certificates", e.target.value)} 
         placeholder="Certificates"
       />
-
+      
       <div className="prev-nxt">
         <button className="pr" onClick={previousPage}>Previous</button>
         <button className="nx" onClick={nextPage}>Next</button>

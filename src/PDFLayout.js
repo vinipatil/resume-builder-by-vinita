@@ -50,16 +50,6 @@ const PDFLayout = ({ formData, imageData }) => {
             </div>
           ))}
 
-        <div className="social">
-          <p>Social Media :</p>
-          <div className="icn">
-          <FontAwesomeIcon icon={faLinkedin} className="icon"/>
-          <FontAwesomeIcon icon={faTwitter} className="icon"/>
-          <FontAwesomeIcon icon={faFacebook} className="icon"/>
-          </div>
-          
-        </div>
-
       </div>
 
     </div>

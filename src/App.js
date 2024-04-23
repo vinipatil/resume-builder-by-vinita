@@ -110,14 +110,14 @@ function App() {
       )}
       {page === 4 && (
         <>
-          {submitted ? ( // Render PDF preview if form is submitted
+          {submitted ? ( 
             <PDFGenerator formData={formData} imageData={imageData} />
-          ) : ( // Render form preview if form is not submitted
+          ) : ( 
             <PageFour
               formData={formData}
               imageData={imageData}
               previousPage={previousPage}
-              onSubmit={onSubmit} // Pass onSubmit function to PageFour
+              onSubmit={onSubmit} 
             />
           )}
         </>
