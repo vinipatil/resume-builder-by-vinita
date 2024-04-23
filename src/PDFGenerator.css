@@ -1,0 +1,22 @@
+.form-field {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.form-field label {
+  flex: 1; /* Labels will take up 1 unit of space */
+  font-weight: bold; /* Make labels bold */
+  margin-right: 10px; /* Add margin between label and value */
+}
+
+.form-field input{
+  flex: 2; /* Values (text or image) will take up 2 units of space */
+}
+
+.form-field img {
+  width: 27%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 250px;
+}
+
